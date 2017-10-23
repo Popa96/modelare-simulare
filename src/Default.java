@@ -4,20 +4,11 @@ public class Default implements Generator {
 
     @Override
     public double Next() {
-        //Random rand=new Random();
-       double  seed=Math.random();
-        //int count=Counter(seed);
-        return  seed;
-    }
-    public int Counter(int number)
-    {
-        int counter=0;
-        while(number!=0)
-        {
-            number/=10;
-            counter++;
 
-        }
-        return counter;
+        double  seed=Math.random();
+
+
+        return seed;
     }
+
 }
