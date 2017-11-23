@@ -42,10 +42,10 @@ public class MiddleSquare implements Generator {
         seed=number;
 
         while(set.contains(seed))
-          {
+        {
             seed=seed+1;
-//            System.out.println("Hash is here");
-           }
+           //System.out.println("Hash is here");
+        }
         set.add(seed);
 
 

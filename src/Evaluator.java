@@ -10,17 +10,18 @@ public class Evaluator
      }
     public double Eval()
      {
-         int mCounter=0;
+         int circleCounter=0;
          for(int i=0;i<=nrPoints;i++)
          {
+
              Point p=new Point(g.Next(),g.Next());
              if (p.IsInCircle())
              {
-                 mCounter++;
+                 circleCounter++;
              }
          }
 
-        return (double) (Math.PI - (double)mCounter / 2500);
+        return (double) (Math.PI - (double)circleCounter / 2500);
      }
     
 }
